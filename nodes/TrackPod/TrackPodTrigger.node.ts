@@ -17,16 +17,6 @@ const EVENT_MAP: Record<string, string[]> = {
 	deletedOrder: ['OrderDeleted'],
 };
 
-/**
- * Track-POD events to register in the Track-POD webhook settings UI,
- * shown as a hint to the user per selected event value.
- */
-const TRACK_POD_EVENT_LABELS: Record<string, string> = {
-	newUpdatedRoute: '<b>Route created</b> and <b>Route updated</b>',
-	deletedRoute: '<b>Route deleted</b>',
-	newUpdatedOrder: '<b>Order created</b> and <b>Order updated</b>',
-	deletedOrder: '<b>Order deleted</b>',
-};
 
 export class TrackPodTrigger implements INodeType {
 	description: INodeTypeDescription = {
